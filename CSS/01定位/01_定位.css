@@ -5,8 +5,6 @@
     absolute: 相对static外的第一个父元素定位
     fixed: 绝对定位相对浏览器窗口定位
     inherit 从父元素继承position属性
-
-
 */
 * {
   margin: 0;
