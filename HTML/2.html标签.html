@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        块元素（block element）
+            - 在网页中一般通过块元素来对页面进行布局
+        行内元素（inline element）
+            - 行内元素主要用来包裹文字
+
+            - 一般情况下会在块元素中放行内元素，而不会在行内元素中放块元素
+            - 块元素中基本上什么都能放
+            - p元素中不能放任何的块元素
+
+        浏览器在解析网页时，会自动对网页中不符合规范的内容进行修正
+            比如：
+                标签写在了根元素的外部
+                p元素中嵌套了块元素
+                根元素中出现了除head和body以外的子元素
+                ... ...
+     -->
+
+    <!-- 常用块级元素 -->
+    <div>div</div>
+    <h3>1_6</h3>
+    <p>这是p标签,段落标签</p>
+    <blockquote>表示一个长引用</blockquote>
+    <q>表示一个短引用</q>
+    <ul>
+      <li>无序列表</li>
+    </ul>
+    <ol type="A">
+      <li>有序列表</li>
+    </ol>
+    <dl>
+      <dt>题目</dt>
+      <dd>描述解释</dd>
+    </dl>
+    <table>
+      <thead>
+        <tr>
+          <th>表头</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>表内容1</td>
+        </tr>
+        <tr>
+          <td>表内容2</td>
+        </tr>
+      </tbody>
+    </table>
+    <button>按钮</button>
+    <form action="">
+      <select name="value" id="">
+        value
+      </select>
+    </form>
+    <!--常用行内标签-->
+    <span>span</span>
+    <strong>特别重要 strong</strong>
+    <b>加粗</b>
+    <em>强调</em>
+    <a href="">a标签</a>
+    <i>斜体</i>
+    <!-- 常见行内块元素 -->
+    <img
+      width="100px"
+      height="200px"
+      src="../Static/f94d7a65f4bd7a704e12061058fe7a7.jpg"
+      alt="图片不展示"
+    />
+    <audio src="" controls></audio>
+    <video src="" controls></video>
+    <input type="text" value="这是input" />
+  </body>
+</html>
