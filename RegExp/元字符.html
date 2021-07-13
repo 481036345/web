@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+	  <p>1<em> .  </em>匹配除 换行符 以外的任意字符 </p>
+	  <p>2<em> \w </em>匹配 字母 数字 下划线</p>
+	  <p>3<em> \s </em>匹配 任意的空白符</p>
+	  <p>4<em> \d </em>匹配 数字</p>
+	  <p>5<em> \b </em>匹配 单词的开始或结束</p>
+	  <p>6<em> ^  </em>匹配 字符串的开始 </p>
+	  <p>7<em> $  </em>匹配 字符串的结束 </p>
+    <script type="text/javascript">
+    	var str = 'ss abc123&def*_你_好\n\n换行\nnnnnnnn';
+		// console.log('str   ' , str);
+		var one = str.match(/./);//返回除换行符的数组
+		// console.log('one ', one);
+		var two = str.match(/\w/);
+		// console.log('two ', two); 
+		var three = str.match(/\s/);
+		// console.log('three ', three);
+		var four = str.match(/\d/);
+		// console.log('four ', four);
+		var five = str.match(/\bdef\b/);
+		// console.log('five ',five);
+		var six = str.match(/^ss/);
+		// console.log('six ' , six);
+		var seven = str.match(/nn$/);
+		// console.log('seven ' ,seven)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。
+    </h3>
+    <script type="text/javascript">
+      var str = "abc123def";
+      var patt1 = /[0-9]+/;
+      var nex = str.match(patt1);
+      console.log("nex   ", nex.toString()); //123;
+    </script>
+  </body>
+</html>
